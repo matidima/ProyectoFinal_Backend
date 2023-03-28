@@ -1,0 +1,47 @@
+components:
+  schemas:
+    Product:
+      type: object
+      required: 
+        - _id
+        - title
+        - description
+        - code
+        - thumbnail
+        - price
+        - stock
+        - timestamp
+      properties:
+        _id:
+          type: ObjectId
+          description: ID autogenerado
+        title:
+          type: string
+          description: Nombre del producto
+        description:
+          type: string
+          description: Descripcion del producto
+        code:
+          type: number
+          description: Codigo del producto
+        thumbnail:
+          type: string
+          description: Url de la imagen del producto
+        price:
+          type: number
+          description: Precio del producto
+        stock:
+          type: number
+          description: Stock
+        timestamp:
+          type: string
+          description: Fecha de generacion del producto
+      example:
+        _id: 64051ec1fd4c559f8db14c8c
+        title: Televisior
+        description: Televisor HD 4K
+        code: 1111
+        thumbnail: http://televisor.jpg
+        price: 1000
+        stock: 10
+        timestamp: 21/03/2023 17:28:47

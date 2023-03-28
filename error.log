@@ -1,0 +1,35 @@
+{"level":50,"time":1679937924159,"pid":17816,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el saveCart"}
+{"level":50,"time":1679942748797,"pid":13352,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el updatedCartById"}
+{"level":50,"time":1679942774251,"pid":13352,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el updatedCartById"}
+{"level":50,"time":1679942811046,"pid":11448,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el updatedCartById"}
+{"level":50,"time":1679942858412,"pid":11408,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el updatedCartById"}
+{"level":50,"time":1679942874254,"pid":9668,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el updatedCartById"}
+{"level":50,"time":1679942926085,"pid":9732,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el updatedCartById"}
+{"level":50,"time":1679942985709,"pid":23820,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el updatedCartById"}
+{"level":50,"time":1679943002712,"pid":6744,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el updatedCartById"}
+{"level":50,"time":1679943757527,"pid":1584,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el deleteProductFromCart"}
+{"level":50,"time":1679944128512,"pid":16344,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el deleteProductFromCart"}
+{"level":50,"time":1679947103280,"pid":14252,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el productsInCart"}
+{"level":50,"time":1679947148896,"pid":7868,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el productsInCart"}
+{"level":50,"time":1679947152996,"pid":7868,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el cartById"}
+{"level":50,"time":1679947154352,"pid":7868,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el productsInCart"}
+{"level":50,"time":1679947172092,"pid":7868,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el productsInCart"}
+{"level":50,"time":1679947816489,"pid":8716,"hostname":"DESKTOP-3J4IMI5","msg":"error in updateCartById-CartsMongo - Error: "}
+{"level":50,"time":1679947829880,"pid":8716,"hostname":"DESKTOP-3J4IMI5","msg":"error in updateCartById-CartsMongo - Error: "}
+{"level":50,"time":1679947842935,"pid":8716,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el deleteProductFromCart"}
+{"level":50,"time":1679948009034,"pid":20500,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el deleteProductFromCart"}
+{"level":30,"time":1679948775150,"pid":2776,"hostname":"DESKTOP-3J4IMI5","msg":"Server inciado en modo fork"}
+{"level":30,"time":1679948775152,"pid":2776,"hostname":"DESKTOP-3J4IMI5","msg":"Servidor escuchando en puerto 8080"}
+{"level":30,"time":1679949026882,"pid":20436,"hostname":"DESKTOP-3J4IMI5","msg":"Server inciado en modo fork"}
+{"level":30,"time":1679949026884,"pid":20436,"hostname":"DESKTOP-3J4IMI5","msg":"Servidor escuchando en puerto 8080"}
+{"level":50,"time":1679960638041,"pid":8328,"hostname":"DESKTOP-3J4IMI5","msg":"error in getOneUser-UsersMongo - Error: "}
+{"level":50,"time":1679960640916,"pid":8328,"hostname":"DESKTOP-3J4IMI5","msg":"error from AuthRouter-Post"}
+{"level":50,"time":1679960833669,"pid":20400,"hostname":"DESKTOP-3J4IMI5","msg":"error in getOneUser-UsersMongo - Error: "}
+{"level":50,"time":1679960836003,"pid":20400,"hostname":"DESKTOP-3J4IMI5","msg":"error from AuthRouter-Post"}
+{"level":50,"time":1679961530387,"pid":11008,"hostname":"DESKTOP-3J4IMI5","msg":"error from Register-Post"}
+{"level":50,"time":1679961574766,"pid":24348,"hostname":"DESKTOP-3J4IMI5","msg":"error from Register-Post"}
+{"level":50,"time":1679961697367,"pid":18648,"hostname":"DESKTOP-3J4IMI5","msg":"error from Register-Post"}
+{"level":50,"time":1679961713258,"pid":20384,"hostname":"DESKTOP-3J4IMI5","msg":"error from Register-Post"}
+{"level":50,"time":1679961970298,"pid":23820,"hostname":"DESKTOP-3J4IMI5","msg":"error in getOneUser-UsersMongo - Error: "}
+{"level":50,"time":1679961995676,"pid":22416,"hostname":"DESKTOP-3J4IMI5","msg":"error in getOneUser-UsersMongo - Error: "}
+{"level":50,"time":1679970413791,"pid":23792,"hostname":"DESKTOP-3J4IMI5","msg":"error from AuthRouter-Post"}

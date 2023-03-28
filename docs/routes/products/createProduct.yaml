@@ -1,0 +1,18 @@
+paths:
+  /products/create:
+    post:
+      summary: Crear un producto
+      description: Ruta utilizada para crear un producto
+      tags: 
+        - API Products
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/requestBodies/NewProduct'
+      responses:
+        "200":
+          description: "El producto fue creado con éxito"
+        "400":
+          description: "No pudimos crear el producto"

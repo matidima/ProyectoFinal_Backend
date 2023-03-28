@@ -1,0 +1,52 @@
+components:
+  schemas:
+    User:
+      type: object
+      required: 
+        - _id
+        - name
+        - lastname
+        - email
+        - password
+        - adress
+        - age
+        - phone
+        - cart
+      properties:
+        _id:
+          type: ObjectId
+          description: ID autogenerado
+        name:
+          type: string
+          description: Nombre del usuario
+        lastname:
+          type: string
+          description: Apellido del usuario
+        email:
+          type: string
+          description: Email del usuario
+        password:
+          type: string
+          description: Password del usuario
+        adress:
+          type: string
+          description: Domicilio del usuario
+        age:
+          type: number
+          description: Edad del usuario
+        phone:
+          type: number
+          description: Telefono del usuario
+        cart:
+          type: ObjectId
+          description: Carrito del usuario
+      example:
+        _id: 640e01e6f86a3c6ee4d62703
+        name: "Matias"
+        lastname: "Di Mascio"
+        email: "matias@dimascio.com"
+        password: "123"
+        adress: "calle 1234"
+        age: 18
+        phone: 1112345678
+        cart: 641e32fdf8a3803b4444a6ec

@@ -1,0 +1,23 @@
+paths:
+  /products/{_id}:
+    get:
+      summary: Ver un producto
+      description: Ruta utilizada para obtener un producto por ID
+      tags: 
+        - API Products
+      parameters:
+      - name: _id
+        in: path
+        description: ID del producto a buscar
+        required: true
+        type: string
+        example: 64051ec1fd4c559f8db14c8c
+      responses:
+        "200":
+          description: "Producto encontrado"
+          content: 
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        "404":
+          description: "Producto no encontrado"

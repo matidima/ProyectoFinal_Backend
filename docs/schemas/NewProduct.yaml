@@ -1,0 +1,37 @@
+components:
+  requestBodies:
+    NewProduct:
+      type: object
+      required:
+        - title
+        - description
+        - code
+        - thumbnail
+        - price
+        - stock
+      properties:
+        title:
+          type: string
+          description: Nombre del producto
+        description:
+          type: string
+          description: Descripcion del producto
+        code:
+          type: number
+          description: Codigo del producto
+        thumbnail:
+          type: string
+          description: Url de la imagen del producto
+        price:
+          type: number
+          description: Precio del producto
+        stock:
+          type: number
+          description: Stock
+      example:
+        title: Televisor
+        description: Televisor HD 4K
+        code: 2222
+        thumbnail: http://televisor.jpg
+        price: 3000
+        stock: 10

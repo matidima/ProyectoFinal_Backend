@@ -1,0 +1,22 @@
+components:
+  requestBodies:
+    NewCart:
+      type: object
+      required:
+        - _id
+        - timestamp
+        - products
+      properties:
+        _id:
+          type: ObjectId
+          description: ID autogenerado
+        timestamp:
+          type: string
+          description: Fecha de generacion del Carrito
+        products:
+          type: array
+          description: Codigo del producto
+      example:
+        _id: 641e32fdf8a3803b4444a6ec
+        timestamp: 21/03/2023 17:23:54
+        products: []
