@@ -3,26 +3,25 @@ import { BCRYPT_VALIDATION, EMAIL_UTILS } from "../utils/index.js";
 import logger from "../utils/loggers.js";
 
 
-/* const login = ( req, email, password, done ) => {
+const login = ( req, email, password, done ) => {
     UserModel.findOne({ email: email }, (err, user) => {
         if (err) {
             console.log("Error in Login: " + err);
-            return done(err);
+            return done(err, { message: "Password or user not valid user" });
         }
         if (!user) {
-            console.log(user)
                 console.log("User Not Found with email: " + email);
-                return done(null, false);
+                return done(null, false, { message: "Password or user not valid user" });
             }
-            if (!BCRYPT_VALIDATION.validatePassword(password, user)) {
+        if (!BCRYPT_VALIDATION.validatePassword(password, user)) {
                 console.log("Invalid Password");
-                return done(null, false); 
+                return done(null, false, { message: "Password or user not valid user" }); 
             }
-            return done(null, user);
+        return done(null, user, { message: "Inicio de sesion exitoso" });
         });
-} */
+}
 
-const login = async (email, password, done) => {
+/* const login = async (email, password, done) => {
     try {
 
         if (!email || !password) return done(null, false, { message: "Password or user not valid user" })
@@ -58,7 +57,7 @@ const login = async (email, password, done) => {
         logger.error(`error from middlewares/passportAuth - LocalStrategy`, error)
         return done(null, error, { message: "error catch" })
     }
-}
+} */
 
 const register = async (req, email, password, done) => {
     try {

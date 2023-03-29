@@ -14,4 +14,4 @@ const UserSchema =  new Schema(
     }
 );
 
-export const UserModel = { UserCollection, UserSchema }
+export const UserModel = moongose.model( UserCollection, UserSchema )

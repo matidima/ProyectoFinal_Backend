@@ -32,4 +32,6 @@
 {"level":50,"time":1679961713258,"pid":20384,"hostname":"DESKTOP-3J4IMI5","msg":"error from Register-Post"}
 {"level":50,"time":1679961970298,"pid":23820,"hostname":"DESKTOP-3J4IMI5","msg":"error in getOneUser-UsersMongo - Error: "}
 {"level":50,"time":1679961995676,"pid":22416,"hostname":"DESKTOP-3J4IMI5","msg":"error in getOneUser-UsersMongo - Error: "}
-{"level":50,"time":1679970413791,"pid":23792,"hostname":"DESKTOP-3J4IMI5","msg":"error from AuthRouter-Post"}
+{"level":50,"time":1679970413791,"pid":23792,"hostname":"DESKTOP-3J4IMI5","msg":"error from AuthRouter-Post"}{"level":50,"time":1680054644713,"pid":7352,"hostname":"DESKTOP-3J4IMI5","msg":"error from Register-Post"}
+{"level":50,"time":1680054705327,"pid":7352,"hostname":"DESKTOP-3J4IMI5","msg":"error from Register-Post"}
+{"level":50,"time":1680054817128,"pid":920,"hostname":"DESKTOP-3J4IMI5","msg":"error from Register-Post"}
