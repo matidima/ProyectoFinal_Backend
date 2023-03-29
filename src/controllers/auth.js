@@ -2,62 +2,27 @@ import { UserModel } from "../models/index.js";
 import { BCRYPT_VALIDATION, EMAIL_UTILS } from "../utils/index.js";
 import logger from "../utils/loggers.js";
 
-
 const login = ( req, email, password, done ) => {
-    UserModel.findOne({ email: email }, (err, user) => {
-        if (err) {
-            console.log("Error in Login: " + err);
-            return done(err, { message: "Password or user not valid user" });
-        }
-        if (!user) {
-                console.log("User Not Found with email: " + email);
-                return done(null, false, { message: "Password or user not valid user" });
-            }
-        if (!BCRYPT_VALIDATION.validatePassword(password, user)) {
-                console.log("Invalid Password");
-                return done(null, false, { message: "Password or user not valid user" }); 
-            }
-        return done(null, user, { message: "Inicio de sesion exitoso" });
-        });
-}
-
-/* const login = async (email, password, done) => {
     try {
-
-        if (!email || !password) return done(null, false, { message: "Password or user not valid user" })
-        const user = await UserDao.getOne({ email: email })
-        console.log(user);
-
-        if (!user) {
-            logger.warn(`Password or user not valid user`);
-            return done(null, false, { message: "Password or user not valid user" })
-        }
-
-        if (BCRYPT_VALIDATION.validatePassword(password, user) != true) {
-            logger.warn(`Password or user not valid pass`);
-            return done(null, false, { message: "Password or user not valid user" })
-        }
-
-        const userResponse = {
-            id: user._id,
-            email: user.email,
-            cart: user.cart,
-            name: user.name,
-            lastname: user.lastname,
-            adress: user.adress,
-            age: user.age,
-            phone: user.phone
-        };
-
-        // res.send({ success: true, data: userResponse })
-        return done(null, userResponse, { message: "login sucessful" })
-
+        UserModel.findOne({ email: email }, (err, user) => {
+            if (err) {
+                console.log("Error in Login: " + err);
+                return done(err, { message: "Password or user not valid user" });
+            }
+            if (!user) {
+                    console.log("User Not Found with email: " + email);
+                    return done(null, false, { message: "Password or user not valid user" });
+                }
+            if (!BCRYPT_VALIDATION.validatePassword(password, user)) {
+                    console.log("Invalid Password");
+                    return done(null, false, { message: "Password or user not valid user" }); 
+                }
+            return done(null, user, { message: "Inicio de sesion exitoso" });
+            });
     } catch (error) {
-        // res.send({ success: false, message: "login fail" })
-        logger.error(`error from middlewares/passportAuth - LocalStrategy`, error)
-        return done(null, error, { message: "error catch" })
+        logger.error(`error from Login-Post`);
     }
-} */
+}
 
 const register = async (req, email, password, done) => {
     try {
@@ -96,13 +61,11 @@ const register = async (req, email, password, done) => {
                             </ul>
                 `
                 await EMAIL_UTILS.sendEmail(mailTo, subject, html)
-                // res.status(200).send({ success: true, data: newUser })
             }
         });
         
     } catch (error) {
         logger.error(`error from Register-Post`);
-        // res.status(400).send({ success: false, message: "Error al registrarse" })
     }
 }
 
