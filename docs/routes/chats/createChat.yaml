@@ -1,18 +1,18 @@
 paths:
-  /cart:
+  /chat:
     post:
-      summary: Crear carrito
-      description: Ruta utilizada para crear un Carrito
+      summary: Crear un Chat
+      description: Ruta utilizada para crear un Chat
       tags: 
-        - Carts
+        - Chats
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              $ref: '#/components/requestBodies/NewCart'
+              $ref: '#/components/requestBodies/NewChat'
       responses:
         "201":
-          description: "El carrito fue creado"
+          description: "El chat fue creado con éxito"
         "400":
           description: "Parametros no válidos"

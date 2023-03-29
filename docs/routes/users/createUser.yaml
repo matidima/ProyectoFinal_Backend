@@ -4,7 +4,7 @@ paths:
       summary: Registrarse
       description: Ruta utilizada para crear un usuario
       tags: 
-        - API Users
+        - Users
       requestBody:
         required: true
         content:

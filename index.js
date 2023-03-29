@@ -6,7 +6,7 @@ import session from "express-session";
 import MongoStore from "connect-mongo";
 import handlebars from "express-handlebars";
 import cluster from 'cluster'
-import { AuthRouter, InfoRouter, RandomRouter, ProductRouter, CartRouter } from "./src/routers/router.js";
+import { AuthRouter, InfoRouter, RandomRouter, ProductRouter, CartRouter, ChatRouter, MessageRouter } from "./src/routers/router.js";
 import { config } from "./src/config/config.js";
 import { MongoDBService } from "./src/services/mongoDBService.js";
 import { PassportAuth } from "./src/middlewares/passportAuth.js";
@@ -64,6 +64,8 @@ app.use('/docs', swaggerUiExpress.serve, swaggerUiExpress.setup(swaggerSpecs))
 app.use('/', AuthRouter)
 app.use('/products', ProductRouter)
 app.use('/cart', CartRouter)
+app.use('/chat', ChatRouter)
+app.use('/messages', MessageRouter)
 app.use('/info', InfoRouter)
 app.use('/api/randoms', RandomRouter)
 

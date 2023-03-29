@@ -4,7 +4,7 @@ paths:
       summary: Eliminar un producto
       description: Ruta utilizada para eliminar un producto
       tags: 
-        - API Products
+        - Products
       parameters:
       - name: _id
         in: path

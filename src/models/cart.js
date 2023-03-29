@@ -4,7 +4,7 @@ const CartCollection = 'carts'
 
 const CartSchema = new Schema(
     {
-        timestamp: String,
+        timestamp: { type: String, require: true },
         products: [{ type: Schema.Types.ObjectId, ref: 'products' }]
     },
 )

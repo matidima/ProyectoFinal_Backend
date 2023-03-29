@@ -17,13 +17,12 @@ const saveCart = async (req, res) => {
 
 const updatedCartById = async (req, res) => {
     try {
+        const { productId } = req.body
         const { cartId } = req.params
-        const { id_prod } = req.params
-        console.log(id_prod)
         const cart = await CartDao.getCartById(cartId)
         if (!cart) return res.status(404).send({ error: true, message: "Error de carrito" })
 
-        const product = await ProductDao.getById(id_prod)
+        const product = await ProductDao.getById(productId)
         if (!product) return res.status(404).send({ error: true, message: "Error de producto" })
 
         cart.products.push(product)

@@ -4,7 +4,7 @@ paths:
       summary: Ver los productos del carrito
       description: Ruta utilizada para obtener los productos del carrito
       tags: 
-        - API Carts
+        - Carts
       parameters:
       - name: _id
         in: path

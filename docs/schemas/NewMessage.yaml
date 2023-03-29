@@ -1,0 +1,12 @@
+components:
+  requestBodies:
+    NewMessage:
+      type: object
+      required:
+        - text
+      properties:
+        text:
+          type: string
+          description: Mensaje que se envia
+      example:
+        text: Hola como estas

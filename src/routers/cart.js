@@ -5,7 +5,7 @@ const router = Router()
 
 router.post('/', CartController.saveCart)
 
-router.post('/:cartId/products/:id_prod', CartController.updatedCartById)
+router.post('/:cartId/products', CartController.updatedCartById)
 
 router.delete('/:cartId', CartController.deleteCart)
 

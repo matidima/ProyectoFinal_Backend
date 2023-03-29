@@ -4,7 +4,7 @@ paths:
       summary: Ver todos los productos
       description: Ruta utilizada para obtener todos los productos
       tags: 
-        - API Products
+        - Products
       responses:
         "200":
           description: "Todos los productos"

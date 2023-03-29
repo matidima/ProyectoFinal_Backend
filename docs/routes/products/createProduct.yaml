@@ -4,7 +4,7 @@ paths:
       summary: Crear un producto
       description: Ruta utilizada para crear un producto
       tags: 
-        - API Products
+        - Products
       requestBody:
         required: true
         content:

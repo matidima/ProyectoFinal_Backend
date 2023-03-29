@@ -4,7 +4,7 @@ paths:
       summary: Comprar el carrito
       description: Ruta utilizada para comprar el carrito, se envia mail de la compra al vendedor
       tags: 
-        - API Carts
+        - Carts
       parameters:
       - name: _id
         in: path

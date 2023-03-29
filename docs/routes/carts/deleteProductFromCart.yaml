@@ -4,7 +4,7 @@ paths:
       summary: Eliminar un producto del carrito
       description: Ruta utilizada para eliminar un producto del carrito
       tags: 
-        - API Carts
+        - Carts
       parameters:
       - name: idCarrito
         in: path

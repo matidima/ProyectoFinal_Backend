@@ -4,7 +4,7 @@ paths:
       summary: Iniciar sesión
       description: Ruta utilizada para realizar inicio de sesión
       tags: 
-        - API Users
+        - Users
       parameters:
         - name: email
           in: formData

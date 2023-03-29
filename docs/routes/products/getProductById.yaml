@@ -4,7 +4,7 @@ paths:
       summary: Ver un producto
       description: Ruta utilizada para obtener un producto por ID
       tags: 
-        - API Products
+        - Products
       parameters:
       - name: _id
         in: path

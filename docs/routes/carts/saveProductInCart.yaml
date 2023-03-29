@@ -4,7 +4,7 @@ paths:
       summary: Agregar producto al carrito
       description: Ruta utilizada para agregar un producto al Carrito
       tags: 
-        - API Carts
+        - Carts
       parameters:
       - name: _id
         in: path
