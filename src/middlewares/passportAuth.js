@@ -1,7 +1,8 @@
 import passport from "passport";
 import { Strategy as LocalStrategy } from "passport-local";
 import { AuthController } from "../controllers/index.js";
-import { UserModel } from "../models/index.js";
+/* import { UsersToValidateDao } from "../daos/index.js"; */
+import { UserModel, UserToValidateModel } from "../models/index.js";
 
 const init = () => {
     passport.use(
@@ -23,7 +24,7 @@ const init = () => {
         done(null, user._id);
     });
     passport.deserializeUser((id, done) => {
-        UserModel.findById(id, function (err, user) {
+        UserToValidateModel.findById(id, function (err, user) {
             done(err, user);
         });
     });

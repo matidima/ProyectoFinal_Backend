@@ -1,6 +1,8 @@
 tags:
   - name: Users
     description: Usuarios
+  - name: Validate
+    description: Validacion
   - name: Products
     description: Productos
   - name: Carts

@@ -1,10 +1,11 @@
-import { UserModel } from "../models/index.js";
-import { BCRYPT_VALIDATION, EMAIL_UTILS } from "../utils/index.js";
+/* import { UsersToValidateDao } from "../daos/index.js"; */
+import { UserModel, UserToValidateModel } from "../models/index.js";
+import { BCRYPT_VALIDATION, EMAIL_UTILS, EMAIL_VALIDATION } from "../utils/index.js";
 import logger from "../utils/loggers.js";
 
-const login = ( req, email, password, done ) => {
+const login = async ( req, email, password, done ) => {
     try {
-        UserModel.findOne({ email: email }, (err, user) => {
+        UserModel.findOne({ email: email }, async function (err, user) {
             if (err) {
                 console.log("Error in Login: " + err);
                 return done(err, { message: "Password or user not valid user" });
@@ -36,31 +37,28 @@ const register = async (req, email, password, done) => {
                 console.log("User already exists");
                 return done(null, false);
             } else {
-                const newUser = new UserModel();
+
+                let codigo = EMAIL_VALIDATION.randomNumbers()
+                                           
                 const passwordString = password.toString();
-                newUser.name = name;
-                newUser.lastname = lastname;
-                newUser.email = email;
-                newUser.password = BCRYPT_VALIDATION.hashPassword(passwordString);
-                newUser.age = age;
-                newUser.address = address;
-                newUser.phone = phone;
-                newUser.save().then(datos => done(null, datos)).catch(null, false)
-                let subject = 'Nuevo usuario creado'
-                let mailTo = 'matias.dimascio@gmail.com'
-                let html = `
-                            <h3>Nuevo registro de usuario</h3>
-                            <p> Datos:</p>
-                            <ul>
-                            <li> Nombre: ${name}</li>
-                            <li> Apellido: ${lastname}</li>
-                            <li> Email: ${email}</li>
-                            <li> Teléfono: ${phone}</li>
-                            <li> Edad: ${age}</li>
-                            <li> Dirección: ${address}</li>
-                            </ul>
+                const UserToValidate = new UserToValidateModel()
+                UserToValidate.name = name,
+                UserToValidate.lastname = lastname,
+                UserToValidate.email = email,
+                UserToValidate.password = BCRYPT_VALIDATION.hashPassword(passwordString),
+                UserToValidate.age = age,
+                UserToValidate.address = address,
+                UserToValidate.phone = phone,
+                UserToValidate.code = codigo,
+                UserToValidate.save().then(datos => done(null, datos)).catch(null, false)
+
+                let subjectValidation = 'Validar email'
+                let htmlValidation = `
+                <h3>Necesitamos validar to email ${name}</h3>
+                <p> Tu codigo para validarlo: ${codigo}. No lo compartas con nadie. </p>
                 `
-                await EMAIL_UTILS.sendEmail(mailTo, subject, html)
+                await EMAIL_UTILS.sendEmail(email, subjectValidation, htmlValidation)
+                
             }
         });
         

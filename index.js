@@ -11,6 +11,7 @@ import { config } from "./src/config/config.js";
 import { MongoDBService } from "./src/services/mongoDBService.js";
 import { PassportAuth } from "./src/middlewares/passportAuth.js";
 import { INFO } from "./src/utils/info.js";
+import { UserToValidateRouter } from "./src/routers/validateUser.js";
 
 const swaggerOptions = {
     definition: {
@@ -62,6 +63,7 @@ PassportAuth.init()
 app.use('/docs', swaggerUiExpress.serve, swaggerUiExpress.setup(swaggerSpecs))
 
 app.use('/', AuthRouter)
+app.use('/validate', UserToValidateRouter)
 app.use('/products', ProductRouter)
 app.use('/cart', CartRouter)
 app.use('/chat', ChatRouter)

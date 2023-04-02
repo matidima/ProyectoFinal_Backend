@@ -1,0 +1,20 @@
+paths:
+  /validate:
+    post:
+      summary: Validar email
+      description: Ruta utilizada para validar el email
+      tags: 
+        - Validate
+      requestBody:
+        required: true
+        content:
+          application/json:
+            codeRec: number
+            schema:
+              example:
+                codeRec: 123456
+      responses:
+        '200':
+          description: "Sesión iniciada correctamente"
+        '401':
+          description: "Credenciales inválidas"

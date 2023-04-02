@@ -21,7 +21,7 @@ router.post("/login",
 router.post("/register",
   passport.authenticate("register"), (req, res) => {
     try {
-      res.status(200).send({success: true, message: "Registro exitoso"})
+      res.status(200).send({success: true, message: "Hemos enviado un mail a su direccion de correo electronico para validar su email"})
     } catch (error) {
       res.status(400).send({success: false, message: "Error de registro"})
     }
