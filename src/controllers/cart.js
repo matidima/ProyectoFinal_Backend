@@ -18,19 +18,30 @@ const saveCart = async (req, res) => {
 const updatedCartById = async (req, res) => {
     try {
         const { productId } = req.body
+        const { cantidad } = req.body
         const { cartId } = req.params
+
         const cart = await CartDao.getCartById(cartId)
         if (!cart) return res.status(404).send({ error: true, message: "Error de carrito" })
 
         const product = await ProductDao.getById(productId)
-        if (!product) return res.status(404).send({ error: true, message: "Error de producto" })
-
-        cart.products.push(product)
-        const updatedCart = await CartDao.updateCartById(cartId, cart)
-        
-        res.status(200).send({ success: true, cart: updatedCart, message: "Carrito actualizado correctamente" })
-
+        if (!product) {
+            res.status(404).send('Producto no encontrado');
+        } 
+        if (cantidad > product.stock){
+            res.status(400).send('No hay suficiente stock disponible para la compra')
+        }
+        else {
+            const stockUpdate = product.stock -= cantidad;
+            await ProductDao.updateById(productId, {stock: stockUpdate} )
+            const productToCart = { _id: productId, cantidad }
+            cart.products.push(productToCart)
+            const updatedCart = await CartDao.updateCartById(cartId, cart)
+            
+            res.status(200).send({ success: true, cart: updatedCart, message: "Carrito actualizado correctamente" })
+        }
     } catch (error) {
+        console.log(error)
         logger.error('error desde el updatedCartById')
         res.status(404).send({ success: false, data: undefined, message: "Error de carrito" })
     }

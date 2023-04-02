@@ -16,9 +16,11 @@ paths:
         required: true
         content:
           application/json:
+            cantidad: number
             schema:
               ref: '#/components/requestBodies/NewProduct'
               example:
+                cantidad: 2
                 productId: 64051ec1fd4c559f8db14c8c
       responses:
         "200":

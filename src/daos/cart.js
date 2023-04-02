@@ -62,4 +62,12 @@ export class CartsMongo extends mongoDBContainer {
             logger.error(`error in deleteCartById-CartsMongo - Error: `, error)
         }
     }
+
+    async getProductsIds() {
+        try {
+            return await this.model.distinct("products._id")
+        } catch (error) {
+            logger.error(`error in deleteCartById-CartsMongo - Error: `, error)
+        }
+    }
 }

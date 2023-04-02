@@ -34,4 +34,18 @@
 {"level":50,"time":1679961995676,"pid":22416,"hostname":"DESKTOP-3J4IMI5","msg":"error in getOneUser-UsersMongo - Error: "}
 {"level":50,"time":1679970413791,"pid":23792,"hostname":"DESKTOP-3J4IMI5","msg":"error from AuthRouter-Post"}{"level":50,"time":1680054644713,"pid":7352,"hostname":"DESKTOP-3J4IMI5","msg":"error from Register-Post"}
 {"level":50,"time":1680054705327,"pid":7352,"hostname":"DESKTOP-3J4IMI5","msg":"error from Register-Post"}
-{"level":50,"time":1680054817128,"pid":920,"hostname":"DESKTOP-3J4IMI5","msg":"error from Register-Post"}
+{"level":50,"time":1680054817128,"pid":920,"hostname":"DESKTOP-3J4IMI5","msg":"error from Register-Post"}{"level":50,"time":1680469068737,"pid":11660,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el updatedCartById"}
+{"level":50,"time":1680470939234,"pid":11460,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el cartById"}
+{"level":50,"time":1680470978312,"pid":11460,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el cartById"}
+{"level":50,"time":1680471055189,"pid":18768,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el cartById"}
+{"level":50,"time":1680471097156,"pid":12104,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el cartById"}
+{"level":50,"time":1680471163400,"pid":20596,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el cartById"}
+{"level":50,"time":1680471233660,"pid":5368,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el cartById"}
+{"level":50,"time":1680471243317,"pid":5368,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el cartById"}
+{"level":50,"time":1680471285799,"pid":24284,"hostname":"DESKTOP-3J4IMI5","err":{"type":"ReferenceError","message":"_id is not defined","stack":"ReferenceError: _id is not defined\n    at buyCart (file:///C:/Users/Matias/Desktop/Curso%20Coder/4%20-%20Programacion%20Backend/Proyecto%20Final/src/controllers/cart.js:134:44)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"},"msg":"_id is not defined"}
+{"level":50,"time":1680471341761,"pid":23836,"hostname":"DESKTOP-3J4IMI5","err":{"type":"ReferenceError","message":"_id is not defined","stack":"ReferenceError: _id is not defined\n    at buyCart (file:///C:/Users/Matias/Desktop/Curso%20Coder/4%20-%20Programacion%20Backend/Proyecto%20Final/src/controllers/cart.js:134:45)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"},"msg":"_id is not defined"}
+{"level":50,"time":1680472128341,"pid":21948,"hostname":"DESKTOP-3J4IMI5","msg":"error in deleteCartById-CartsMongo - Error: "}
+{"level":50,"time":1680472927960,"pid":9824,"hostname":"DESKTOP-3J4IMI5","msg":"error in deleteCartById-CartsMongo - Error: "}
+{"level":50,"time":1680473003624,"pid":9824,"hostname":"DESKTOP-3J4IMI5","msg":"error in deleteCartById-CartsMongo - Error: "}
+{"level":50,"time":1680473677273,"pid":16352,"hostname":"DESKTOP-3J4IMI5","err":{"type":"ReferenceError","message":"_id is not defined","stack":"ReferenceError: _id is not defined\n    at buyCart (file:///C:/Users/Matias/Desktop/Curso%20Coder/4%20-%20Programacion%20Backend/Proyecto%20Final/src/controllers/cart.js:133:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"},"msg":"_id is not defined"}
+{"level":50,"time":1680475049693,"pid":1368,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el updatedCartById"}
