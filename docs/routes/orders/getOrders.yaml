@@ -1,0 +1,24 @@
+paths:
+  /orders:
+    post:
+      summary: Ordenes de compra
+      description: Ruta utilizada para ver las ordenes de compra del usuario
+      tags: 
+        - Orders
+      requestBody:
+        required: true
+        content:
+          application/json:
+            email: string
+            schema:
+              example:
+                email: matias@dimascio.com
+      responses:
+        '200':
+          description: "Ordenes de compra encontradas"
+          content: 
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '401':
+          description: "Credenciales inválidas"

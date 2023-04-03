@@ -7,6 +7,8 @@ tags:
     description: Productos
   - name: Carts
     description: Carritos
+  - name: Orders
+    description: Ordenes
   - name: Messages
     description: Mensajes
   - name: Chats

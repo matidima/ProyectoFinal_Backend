@@ -15,6 +15,6 @@ router.get('/:cartId/products', CartController.productsInCart)
 
 router.get('/:id', CartController.cartById)
 
-router.get('/:id/buyCart', CartController.buyCart)
+router.post('/:id/buyCart', CartController.buyCart)
 
 export { router as CartRouter }

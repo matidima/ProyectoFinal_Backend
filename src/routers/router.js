@@ -5,3 +5,4 @@ export { ProductRouter } from "./products.js";
 export { CartRouter } from "./cart.js";
 export { ChatRouter } from "./chat.js";
 export { MessageRouter } from "./message.js";
+export { OrderRouter } from "./orders.js";

@@ -2,6 +2,7 @@ import { DATE_UTILS, EMAIL_UTILS } from '../utils/index.js'
 import { CartDao, ProductDao } from '../daos/index.js'
 import logger from '../utils/loggers.js'
 import { config } from '../config/config.js'
+import { UserModel } from '../models/user.js'
 
 
 const saveCart = async (req, res) => {
@@ -131,31 +132,46 @@ const buyCart = async (req, res) => {
     try {
 
         const { id } = req.params
+        const { email } = req.body
 
         const cart = await CartDao.getCartById(id)
         if (!cart) return res.status(404).send({ error: true, message: "Error de carrito" })
 
-        let subject = 'Nuevo pedido!'
-        let mailTo = config.MAIL.USER
+        const user = await UserModel.findOne({email: email})
+        if (!user) return res.status(404).send({ error: true, message: "Error de usuario" }) 
 
-        let productsList = cart.products.map(({ title }) => (
-            `
-            <li>${title}</li>
-            `
-        )).join('')
+        const cartInUser = user.orders.find(element => element._id == id)
+        if (cartInUser) { 
+            res.status(404).send({ error: true, message: "La compra del carrito ya ha sido realizada por el usuario" }) 
+        }
+        else {
+            user.orders.push(cart)
+            await UserModel.findByIdAndUpdate(user._id, user)
+            const userUpdated = await UserModel.findOne(user._id)
+            
+            let subject = 'Nuevo pedido!'
+            let mailTo = config.MAIL.USER
+    
+            let productsList = cart.products.map(({ title }) => (
+                `
+                <li>${title}</li>
+                `
+            )).join('')
+    
+            let html = `
+                            <h3>Nuevo pedido!!</h3>
+                            <p> Datos:</p>
+                            <ul>
+                                ${productsList}
+                            </ul>
+                        `
+    
+    
+            await EMAIL_UTILS.sendEmail(mailTo, subject, html)
+            res.status(200).send({ success: true, data: userUpdated, message: "Enviamos un mail al vendedor para que pueda despachar el pedido" })
+        }
 
-        let html = `
-                        <h3>Nuevo pedido!!</h3>
-                        <p> Datos:</p>
-                        <ul>
-                            ${productsList}
-                        </ul>
-                    `
 
-
-        await EMAIL_UTILS.sendEmail(mailTo, subject, html)
-
-        res.status(200).send({ success: true, data: cart, message: "Enviamos un mail al vendedor para que pueda despachar el pedido" })
 
     } catch (error) {
 

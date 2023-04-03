@@ -11,7 +11,7 @@ components:
         - adress
         - age
         - phone
-        - cart
+        - orders
       properties:
         _id:
           type: ObjectId
@@ -37,9 +37,9 @@ components:
         phone:
           type: number
           description: Telefono del usuario
-        cart:
+        orders:
           type: ObjectId
-          description: Carrito del usuario
+          description: Ordenes de compra del usuario
       example:
         _id: 640e01e6f86a3c6ee4d62703
         name: "Matias"
@@ -49,4 +49,4 @@ components:
         adress: "calle 1234"
         age: 18
         phone: 1112345678
-        cart: 641e32fdf8a3803b4444a6ec
+        orders: [641e32fdf8a3803b4444a6ec]

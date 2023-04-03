@@ -32,9 +32,6 @@ components:
         celPhone:
           type: number
           description: Telefono del usuario
-        cart:
-          type: ObjectId
-          description: Carrito del usuario
       example:
         name: "Matias"
         lastname: "Di Mascio"

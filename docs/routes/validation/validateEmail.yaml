@@ -15,6 +15,6 @@ paths:
                 codeRec: 123456
       responses:
         '200':
-          description: "Sesión iniciada correctamente"
+          description: "Validacion correcta"
         '401':
           description: "Credenciales inválidas"

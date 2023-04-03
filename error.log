@@ -49,3 +49,12 @@
 {"level":50,"time":1680473003624,"pid":9824,"hostname":"DESKTOP-3J4IMI5","msg":"error in deleteCartById-CartsMongo - Error: "}
 {"level":50,"time":1680473677273,"pid":16352,"hostname":"DESKTOP-3J4IMI5","err":{"type":"ReferenceError","message":"_id is not defined","stack":"ReferenceError: _id is not defined\n    at buyCart (file:///C:/Users/Matias/Desktop/Curso%20Coder/4%20-%20Programacion%20Backend/Proyecto%20Final/src/controllers/cart.js:133:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"},"msg":"_id is not defined"}
 {"level":50,"time":1680475049693,"pid":1368,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el updatedCartById"}
+{"level":50,"time":1680486983664,"pid":17436,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el cartById"}
+{"level":50,"time":1680487877531,"pid":25636,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el cartById"}
+{"level":50,"time":1680488203146,"pid":9984,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el cartById"}
+{"level":50,"time":1680488208411,"pid":9984,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el cartById"}
+{"level":50,"time":1680488343404,"pid":12352,"hostname":"DESKTOP-3J4IMI5","msg":"error desde el cartById"}
+{"level":50,"time":1680488375470,"pid":26060,"hostname":"DESKTOP-3J4IMI5","msg":"error in getCartById-CartsMongo - Error: "}
+{"level":50,"time":1680488386695,"pid":26060,"hostname":"DESKTOP-3J4IMI5","msg":"error in getCartById-CartsMongo - Error: "}
+{"level":50,"time":1680488413060,"pid":19560,"hostname":"DESKTOP-3J4IMI5","msg":"error in getCartById-CartsMongo - Error: "}
+{"level":50,"time":1680488423185,"pid":25888,"hostname":"DESKTOP-3J4IMI5","msg":"error in getCartById-CartsMongo - Error: "}

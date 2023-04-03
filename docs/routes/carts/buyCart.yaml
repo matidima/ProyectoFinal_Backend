@@ -1,6 +1,6 @@
 paths:
   /cart/{_id}/buycart:
-    get:
+    post:
       summary: Comprar el carrito
       description: Ruta utilizada para comprar el carrito, se envia mail de la compra al vendedor
       tags: 
@@ -12,6 +12,14 @@ paths:
         required: true
         type: string
         example: 641e32fdf8a3803b4444a6ec
+      requestBody:
+        required: true
+        content:
+          application/json:
+            email: string
+            schema:
+              example:
+                email: matias@dimascio.com
       responses:
         "200":
           description: "Compra de carrito finalizada"
