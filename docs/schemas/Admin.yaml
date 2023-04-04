@@ -1,0 +1,17 @@
+components:
+  requestBodies:
+    Admin:
+      type: object
+      required: 
+        - email
+        - password
+      properties:
+        email:
+          type: string
+          description: Email del usuario
+        password:
+          type: string
+          description: Password del usuario
+      example:
+        email: "admin@email.com"
+        password: "123"

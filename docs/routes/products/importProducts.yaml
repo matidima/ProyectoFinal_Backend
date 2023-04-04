@@ -1,0 +1,18 @@
+paths:
+  /products:
+    post:
+      summary: Importar productos
+      description: Ruta utilizada para importar los productos a la base de datos
+      tags: 
+        - Products
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/requestBodies/Admin'
+      responses:
+        "200":
+          description: "Se importaron los productos exitosamente"
+        "400":
+          description: "Error al importar los productos"

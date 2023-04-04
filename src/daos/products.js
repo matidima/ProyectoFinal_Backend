@@ -16,4 +16,12 @@ export class ProductsMongo extends mongoDBContainer {
         ProductsMongo.instance = this
         return this
     }
+
+    async insertProducts(elements) {
+        try {
+            return await this.model.insertMany(elements)
+        } catch (error) {
+            logger.error(`error in saveMessage-MessagesMongo - Error: `, error)
+        }
+    }
 }

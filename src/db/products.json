@@ -1,0 +1,38 @@
+[
+   {
+      "title": "televisor",
+      "description": "televisor 4k hd",
+      "code": 1111,
+      "price": 130000,
+      "thumbnail": "https://images.fravega.com/f300/d7ca24bf5639a7db78c31aa9fa963be8.jpg.w…",
+      "stock": 10,
+      "timestamp": "3/4/2023 23:31:21"
+   },
+   {
+      "title": "televisor",
+      "description": "televisor 4k hd",
+      "code": 1111,
+      "price": 130000,
+      "thumbnail": "https://images.fravega.com/f300/d7ca24bf5639a7db78c31aa9fa963be8.jpg.w…",
+      "stock": 10,
+      "timestamp": "3/4/2023 23:34:35"
+   },
+   {
+      "title": "televisor",
+      "description": "televisor 4k hd",
+      "code": 1111,
+      "price": 130000,
+      "thumbnail": "https://images.fravega.com/f300/d7ca24bf5639a7db78c31aa9fa963be8.jpg.w…",
+      "stock": 10,
+      "timestamp": "3/4/2023 23:36:05"
+   },
+   {
+      "title": "Televisor",
+      "description": "Televisor HD 4K",
+      "code": 2222,
+      "price": 3000,
+      "thumbnail": "http://televisor.jpg",
+      "stock": 10,
+      "timestamp": "4/4/2023 00:23:15"
+   }
+]

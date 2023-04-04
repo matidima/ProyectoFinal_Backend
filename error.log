@@ -58,3 +58,26 @@
 {"level":50,"time":1680488386695,"pid":26060,"hostname":"DESKTOP-3J4IMI5","msg":"error in getCartById-CartsMongo - Error: "}
 {"level":50,"time":1680488413060,"pid":19560,"hostname":"DESKTOP-3J4IMI5","msg":"error in getCartById-CartsMongo - Error: "}
 {"level":50,"time":1680488423185,"pid":25888,"hostname":"DESKTOP-3J4IMI5","msg":"error in getCartById-CartsMongo - Error: "}
+{"level":50,"time":1680573402624,"pid":1312,"hostname":"DESKTOP-3J4IMI5","msg":"ImportProducts error:ReferenceError: id is not defined"}
+{"level":50,"time":1680573538368,"pid":1312,"hostname":"DESKTOP-3J4IMI5","msg":"ImportProducts error:ReferenceError: id is not defined"}
+{"level":50,"time":1680573541086,"pid":1312,"hostname":"DESKTOP-3J4IMI5","msg":"ImportProducts error:ReferenceError: id is not defined"}
+{"level":50,"time":1680573573551,"pid":8224,"hostname":"DESKTOP-3J4IMI5","msg":"ImportProducts error:ReferenceError: BCRYPT_VALIDATION is not defined"}
+{"level":50,"time":1680573578090,"pid":8224,"hostname":"DESKTOP-3J4IMI5","msg":"ImportProducts error:ReferenceError: BCRYPT_VALIDATION is not defined"}
+{"level":50,"time":1680573629281,"pid":30480,"hostname":"DESKTOP-3J4IMI5","msg":"ImportProducts error:ReferenceError: BCRYPT_VALIDATION is not defined"}
+{"level":50,"time":1680573649999,"pid":27800,"hostname":"DESKTOP-3J4IMI5","msg":"ImportProducts error:ReferenceError: BCRYPT_VALIDATION is not defined"}
+{"level":50,"time":1680573678190,"pid":13360,"hostname":"DESKTOP-3J4IMI5","msg":"ImportProducts error:ReferenceError: BCRYPT_VALIDATION is not defined"}
+{"level":50,"time":1680573971871,"pid":23840,"hostname":"DESKTOP-3J4IMI5","msg":"ImportProducts error:Error: ENOENT: no such file or directory, open 'products.json'"}
+{"level":50,"time":1680574148062,"pid":11384,"hostname":"DESKTOP-3J4IMI5","msg":"ImportProducts error:Error: ENOENT: no such file or directory, open './src/db/products.json'"}
+{"level":50,"time":1680574192735,"pid":23860,"hostname":"DESKTOP-3J4IMI5","msg":"ImportProducts error:Error: ENOENT: no such file or directory, open 'products.json'"}
+{"level":50,"time":1680574633880,"pid":2140,"hostname":"DESKTOP-3J4IMI5","msg":"createProduct error:TypeError: Cannot read properties of null (reading 'password')"}
+{"level":50,"time":1680574795589,"pid":26932,"hostname":"DESKTOP-3J4IMI5","msg":"createProduct error:TypeError: Cannot read properties of null (reading 'password')"}
+{"level":50,"time":1680575447046,"pid":16152,"hostname":"DESKTOP-3J4IMI5","msg":"createProduct error:TypeError: allElements.push is not a function"}
+{"level":50,"time":1680575563253,"pid":9088,"hostname":"DESKTOP-3J4IMI5","msg":"createProduct error:TypeError: file.push is not a function"}
+{"level":50,"time":1680575623857,"pid":9088,"hostname":"DESKTOP-3J4IMI5","msg":"createProduct error:TypeError: file.push is not a function"}
+{"level":50,"time":1680578603254,"pid":25340,"hostname":"DESKTOP-3J4IMI5","msg":"createProduct error:TypeError: Cannot read properties of null (reading 'password')"}
+{"level":50,"time":1680578869354,"pid":27704,"hostname":"DESKTOP-3J4IMI5","msg":"ImportProducts error:SyntaxError: Unexpected token o in JSON at position 1"}
+{"level":50,"time":1680578922217,"pid":27704,"hostname":"DESKTOP-3J4IMI5","msg":"ImportProducts error:SyntaxError: Unexpected token o in JSON at position 1"}
+{"level":50,"time":1680579215221,"pid":31208,"hostname":"DESKTOP-3J4IMI5","msg":"deleteProduct error:TypeError: Cannot read properties of null (reading 'password')"}
+{"level":50,"time":1680579246256,"pid":8164,"hostname":"DESKTOP-3J4IMI5","msg":"deleteProduct error:TypeError: Cannot read properties of null (reading 'password')"}
+{"level":50,"time":1680579337051,"pid":19800,"hostname":"DESKTOP-3J4IMI5","msg":"deleteProduct error:TypeError: Cannot read properties of null (reading 'password')"}
+{"level":50,"time":1680579364228,"pid":27128,"hostname":"DESKTOP-3J4IMI5","msg":"deleteProduct error:TypeError: Cannot read properties of null (reading 'password')"}

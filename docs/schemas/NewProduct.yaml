@@ -3,6 +3,8 @@ components:
     NewProduct:
       type: object
       required:
+        - email
+        - password
         - title
         - description
         - code
@@ -10,6 +12,12 @@ components:
         - price
         - stock
       properties:
+        email:
+          type: string
+          description: Email del admin
+        password:
+          type: string
+          description: Password del admin
         title:
           type: string
           description: Nombre del producto
@@ -29,6 +37,8 @@ components:
           type: number
           description: Stock
       example:
+        email: admin@email.com
+        password: 123 
         title: Televisor
         description: Televisor HD 4K
         code: 2222

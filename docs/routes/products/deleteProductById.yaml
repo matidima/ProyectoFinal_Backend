@@ -12,6 +12,12 @@ paths:
         required: true
         type: string
         example: 6415d99e78303c0bf0421aa4
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/requestBodies/Admin'
       responses:
         "200":
           description: "El producto fue eliminado"
